@@ -16,6 +16,8 @@ COPY . .
 
 RUN npm install -g serve
 
+RUN npm ls babel-loader
+
 RUN npm run build
 
 # Expose the desired port (e.g., 3000 for React development server)
