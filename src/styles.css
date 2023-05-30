@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    display: flex; /* Add this */
+    flex-direction: column; /* Add this */
+    justify-content: center; /* Add this */
+    align-items: center; /* Add this */
+    height: 100vh; /* Add this */
+}
+
+.titulooo {
+    font-family: 'Poppins', sans-serif;
+}
+
+.center {
+    position: relative; /* Change from absolute to relative */
+    border: 5px solid #ffff00;
+    padding: 10px;
+}
+
+#wheel {
+    display: flex;
+}
+.box {
+    padding: 30px 40px;
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 650px;
+    z-index: 2;
+    /* Remove position: absolute; */
+}
+.box .imageBox {
+    text-align: center;
+}
+.box img {
+    width: 550px;
+}
+.title {
+    text-align: center;
+    font-size: 32px;
+}
+.closeContainer {
+    display: flex;
+    justify-content: center;
+}
+.closepankaj {
+    margin-top: 30px;
+    width: 240px;
+    height: 54px;
+    cursor: pointer;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #2466ff;
+    border-radius: 5px;
+}
+
+@media (min-width: 1080px) and (min-height: 1920px) {
+    .wheelContainer {
+        width: 900px;
+        height: 900px;
+    }
+
+    #pankaj {
+        padding-top: 300px;
+        padding-bottom: 300px;
+    }
+
+    .box {
+        padding: 30px 40px;
+        width: 500px;
+    }
+
+    .box img {
+        width: 400px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .closepankaj {
+        margin-top: 20px;
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+.app-title {
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+}
+
+.app-image {
+    margin-bottom: 20px;
+    width: 200px;
+    height: auto;
+    order: 3; /* Add this */
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 30px 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    z-index: 9999; /* high z-index to ensure it appears above all other elements */
+}
+
+.modal .imageBox {
+    text-align: center;
+}
+
+.modal img {
+    width: 550px;
+}
+
+.modal .titleWin {
+    text-align: center;
+    font-size: 32px;
+}
+
+.modal .closeContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.modal .closepankaj {
+    margin-top: 30px;
+    width: 240px;
+    height: 54px;
+    cursor: pointer;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #2466ff;
+    border-radius: 5px;
+}
+
+@keyframes color-change {
+    0% {
+        border-color: #ce417d;
+    }
+    25% {
+        border-color: #534341;
+    }
+    50% {
+        border-color: #d6d3c6;
+    }
+    75% {
+        border-color: #93c6c7;
+    }
+    100% {
+        border-color: #500878;
+    }
+}
+
+.animated-border {
+    border-width: 5px;
+    border-style: solid;
+    animation: color-change 2s infinite;
+}

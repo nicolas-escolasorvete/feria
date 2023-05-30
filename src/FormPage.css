@@ -1,0 +1,142 @@
+.formcito {
+    background: url('./assets/background.svg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-wrapper {
+    width: 80vw;
+    max-width: 600px;
+    margin-top: 20px;
+    border: solid 2px #e73c7e;
+    border-radius: 10px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-decoration-break: clone;
+    animation: gradient 15s linear infinite;
+    padding: 20px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 100% 0%, 0% 0%;
+    }
+    100% {
+        background-position: 0% 100%, 100% 0%;
+    }
+}
+
+/* Styles for the logo container */
+.logo-container {
+    text-align: center;
+    width: 100%;
+}
+
+/* Styles for the logo */
+.logo {
+    width: 650px; /* adjust as needed */
+    height: auto; /* maintain aspect ratio */
+}
+
+/* Styles for the form inputs */
+.form-wrapper .form-group {
+    margin-bottom: 20px;
+}
+
+.form-wrapper .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-wrapper .form-group input {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-wrapper .form-group input:focus {
+    outline: none;
+    background-color: #e5e5e5;
+}
+
+/* Styles for the submit button */
+.form-wrapper .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e73c7e;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-wrapper .btn:hover {
+    background-color: #e73c7e;
+}
+
+/* Styles for the button */
+.botoncito {
+    background-color: #e73c7e;
+    border-color: #e73c7e;
+    color: white;
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    left: 130px;
+}
+
+.botoncito:hover {
+    background-color: #c63262; /* Darken the color on hover */
+}
+
+.botoncito:after {
+    content: '';
+    background: #fff;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0.4;
+    transition: all 0.8s;
+}
+
+.botoncito:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 0.2;
+    transition: 0s;
+}
+
+.botoncito:focus {
+    outline: none;
+    box-shadow: none;
+}
